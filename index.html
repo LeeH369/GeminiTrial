@@ -182,6 +182,67 @@
             margin-right: 8px;
         }
         
+        .donation-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 30px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        
+        .donation-section h2 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .donation-section h2::after {
+            display: none;
+        }
+        
+        .donation-container {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+        
+        .donation-item {
+            text-align: center;
+        }
+        
+        .donation-item img {
+            max-width: 280px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        
+        .donation-item:hover img {
+            transform: scale(1.03);
+        }
+        
+        .donation-label {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .wechat-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .alipay-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
         footer {
             text-align: center;
             color: white;
@@ -209,6 +270,15 @@
             
             .tutorial-section h3 {
                 font-size: 18px;
+            }
+            
+            .donation-container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            
+            .donation-item img {
+                max-width: 300px;
             }
         }
     </style>
@@ -298,6 +368,37 @@
             <div class="content">
                 <p>（3）输入自己的 Visa 卡号、过期日期和 CVC</p>
                 <p><a href="https://www.meiguodizhi.com" target="_blank">https://www.meiguodizhi.com</a> 然后去这里生成一个美国街道信息，最好是加州的。</p>
+            </div>
+            
+            <h3><span class="step-number">6</span>支付并完成注册</h3>
+            <div class="content">
+                <p>支付完成后回到这里：<a href="https://gemini.google/students" target="_blank">https://gemini.google/students</a></p>
+                <p>然后按照网页提示一步步来，因为博主已经注册了好几个了，手机号频繁了，这个地方就不展示图片了。</p>
+            </div>
+            
+            <h3><span class="step-number">7</span>成功</h3>
+            <div class="content">
+                <p>如果你看到这个提示，那么恭喜，你做的完全正确，从现在开始使用 Gemini 进行你的创作吧！</p>
+            </div>
+            <div class="image-container">
+                <img src="images/psc.png" alt="成功页面">
+                <div class="image-caption">图8：成功页面</div>
+            </div>
+        </div>
+        
+        <div class="donation-section">
+            <h2>☕ 教程免费制作 如果觉得有帮助，可以请作者喝杯咖啡</h2>
+            <div class="donation-container">
+                <div class="donation-item">
+                    <div class="wechat-icon">☕</div>
+                    <img src="images/ea32a0fdd4a90d4100cb7b249b974a9b.jpg" alt="微信打赏">
+                    <div class="donation-label">微信支付</div>
+                </div>
+                <div class="donation-item">
+                    <div class="alipay-icon">💰</div>
+                    <img src="images/bda2629fe3551f464e6884d6e58e3b6e.jpg" alt="支付宝打赏">
+                    <div class="donation-label">支付宝</div>
+                </div>
             </div>
         </div>
     </div>
